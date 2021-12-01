@@ -1,10 +1,11 @@
 const express = require("express");
 const app = express();
-const port = process.env.PORT || 5000;
 const { MongoClient } = require("mongodb");
 require("dotenv").config();
 const cors = require("cors");
 const ObjectId = require("mongodb").ObjectId;
+
+const port = process.env.PORT || 5000;
 
 app.use(cors());
 app.use(express.json());
@@ -47,3 +48,8 @@ app.get('/', (req, res)=> {
 app.listen(port, () => {
   console.log("Asadullah Hil Galib server is running " + port);
 });
+
+// Allahuakbar
+// Personal Info______
+// DB_USER=galibPortfolio
+// DB_PASS=C7XcWLSvGbYBj6vc
